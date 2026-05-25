@@ -1,0 +1,496 @@
+{
+  "$schema": "yangyang-trip-data-v1",
+  "meta": {
+    "title": "양양 태교여행 데이터",
+    "description": "여행 일정 장소 9곳 + 임산부 추천 카페 5곳",
+    "tripDates": {
+      "start": "2026-06-06",
+      "end": "2026-06-08"
+    },
+    "imageNotes": "image 필드는 비어 있습니다. 다음 중 하나로 채우세요: (1) Google Places JS API로 place_id로 사진 자동 로드, (2) 블로그 후기 URL에서 스크린샷 후 /public 폴더에 업로드, (3) 직접 방문 후 촬영. 가장 권장하는 방식은 (1) — 사진과 출처 표기가 자동으로 처리됩니다."
+  },
+
+  "itineraryPlaces": [
+    {
+      "id": "darak-makguksu",
+      "day": 1,
+      "order": 1,
+      "category": "food",
+      "name": "다락막국수",
+      "tagline": "양양 명물 막국수, 숙소 도보 5분",
+      "address": "강원도 양양군 현남면 시변리 27-17",
+      "phone": null,
+      "coordinates": { "lat": 37.9729826, "lng": 128.7591618 },
+      "googlePlaceId": "ChIJEYLT60ZV318REgLObHIARSo",
+      "hours": "매일 11:00 – 21:00",
+      "schedule": { "arriveAt": "12:30", "durationMin": 90 },
+      "note": "메밀이 임산부 소화에도 편하고, 보쌈·동태전도 있어 아이들 메뉴도 OK. 가게가 좁아 6명 동시 입장 어려울 수 있어 도착 30분 전 확인 전화 권장.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/다락막국수%20양양",
+        "kakao": "https://map.kakao.com/?q=다락막국수%20양양%20현남면",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJEYLT60ZV318REgLObHIARSo"
+      }
+    },
+    {
+      "id": "surf-resort-checkin",
+      "day": 1,
+      "order": 2,
+      "category": "lodging",
+      "name": "서프리조트 인더시티 양양",
+      "tagline": "체크인 + 휴식",
+      "address": "강원도 양양군 현남면 새나루길 5",
+      "phone": "010-6830-6240",
+      "website": "https://innthecity.oapms.co.kr/",
+      "coordinates": { "lat": 37.9715846, "lng": 128.7606307 },
+      "googlePlaceId": "ChIJFd71VoFV318Rt8vxcyEPkjc",
+      "hours": "체크인 15:00 / 체크아웃 11:00",
+      "schedule": { "arriveAt": "15:00", "durationMin": 120 },
+      "note": "이마트 건물 내 위치. 세탁기·건조기 있어 아기 옷 빨래 가능. 주차장 지하 2층까지 넉넉.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/서프리조트인더시티양양",
+        "kakao": "https://map.kakao.com/?q=서프리조트인더시티양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJFd71VoFV318Rt8vxcyEPkjc"
+      }
+    },
+    {
+      "id": "jukdoam-walk",
+      "day": 1,
+      "order": 3,
+      "category": "walk",
+      "name": "죽도암 & 죽도해변",
+      "tagline": "바다 옆 작은 암자와 해변 산책",
+      "address": "강원도 양양군 현남면 새나루길 26",
+      "phone": null,
+      "coordinates": { "lat": 37.9722553, "lng": 128.7638899 },
+      "googlePlaceId": "ChIJbzydnXRW318R0jdZzxgbsME",
+      "hours": "상시 개방",
+      "schedule": { "arriveAt": "17:00", "durationMin": 90 },
+      "note": "송림과 해안을 따라 천천히 걷는 태교 산책로. 고양이들이 살고 있어 3세 조카도 좋아해요. 앞에 죽도해변 있으니 조개껍질 줍기 가능.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/죽도암",
+        "kakao": "https://map.kakao.com/?q=죽도암%20양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJbzydnXRW318R0jdZzxgbsME"
+      }
+    },
+    {
+      "id": "poipu-dinner",
+      "day": 1,
+      "order": 4,
+      "category": "food",
+      "name": "Poipu",
+      "tagline": "숙소 옆 캐주얼 양식 (수제버거·파스타)",
+      "address": "강원도 양양군 현남면 인구항길 17",
+      "phone": null,
+      "coordinates": { "lat": 37.9707975, "lng": 128.7619086 },
+      "googlePlaceId": "ChIJV3XCjIpV318RWiBK14KuWJ4",
+      "hours": "매일 11:00 – 21:00",
+      "schedule": { "arriveAt": "18:30", "durationMin": 90 },
+      "note": "숙소 도보 1분. 빈백 좌석이 있어 임산부·아기도 편함. 메뉴 다양해서 아이들도 OK. 음악이 좀 큰 편이라는 후기.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/Poipu%20양양",
+        "kakao": "https://map.kakao.com/?q=Poipu%20인구해변",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJV3XCjIpV318RWiBK14KuWJ4"
+      }
+    },
+    {
+      "id": "naksansa",
+      "day": 2,
+      "order": 1,
+      "category": "place",
+      "name": "낙산사",
+      "tagline": "태교여행 1순위, 절벽 위 사찰",
+      "address": "강원도 양양군 강현면 낙산사로 100",
+      "phone": "033-672-2448",
+      "website": "http://www.naksansa.or.kr/",
+      "coordinates": { "lat": 38.1246156, "lng": 128.628045 },
+      "googlePlaceId": "ChIJzcljWJOv2F8RhIkfptRT3sg",
+      "hours": "매일 개방",
+      "schedule": { "arriveAt": "10:30", "durationMin": 120 },
+      "note": "의상대·홍련암 바다 전망이 압권. 셔틀버스로 가파른 구간 건너뛸 수 있어 임산부 부담 적음. 무리하지 말고 의상대 쪽만 둘러봐도 OK.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/낙산사",
+        "kakao": "https://map.kakao.com/?q=낙산사",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJzcljWJOv2F8RhIkfptRT3sg"
+      }
+    },
+    {
+      "id": "jeongan-lunch",
+      "day": 2,
+      "order": 2,
+      "category": "food",
+      "name": "정안식당",
+      "tagline": "강원 향토 한정식, 6명 룸 예약 가능",
+      "address": "강원도 양양군 강현면 동해대로 3405",
+      "phone": null,
+      "coordinates": { "lat": 38.1414148, "lng": 128.6128984 },
+      "googlePlaceId": "ChIJo9XmM0ql2F8RxQspEYygSjw",
+      "hours": "매일 10:00 – 21:00",
+      "schedule": { "arriveAt": "12:45", "durationMin": 90 },
+      "note": "낙산사에서 차 5분. 자극 적은 푸짐한 메뉴 위주라 임산부에게 좋아요. 6명 룸 미리 예약 강력 추천.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/정안식당%20양양",
+        "kakao": "https://map.kakao.com/?q=정안식당%20강현면",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJo9XmM0ql2F8RxQspEYygSjw"
+      }
+    },
+    {
+      "id": "cafe-dunchi",
+      "day": 2,
+      "order": 3,
+      "category": "cafe",
+      "name": "카페 둔치",
+      "tagline": "남대천 뷰 힐링 카페",
+      "address": "강원도 양양군 양양읍 조산리 95-45",
+      "phone": null,
+      "coordinates": { "lat": 38.0955795, "lng": 128.6396188 },
+      "googlePlaceId": "ChIJrZqVasSv2F8Rp-7cL0KXVB4",
+      "hours": "매일 10:00 – 21:00",
+      "schedule": { "arriveAt": "14:45", "durationMin": 90 },
+      "note": "남대천을 한눈에 보는 잔잔한 힐링 카페. 평점 4.9, 가족·아이 환영. 통창 좌석에서 휴식. 아이들 낮잠 타이밍 활용.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/카페%20둔치%20양양",
+        "kakao": "https://map.kakao.com/?q=카페%20둔치%20양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJrZqVasSv2F8Rp-7cL0KXVB4"
+      }
+    },
+    {
+      "id": "hajodae-observatory",
+      "day": 2,
+      "order": 4,
+      "category": "place",
+      "name": "하조대 전망대",
+      "tagline": "절벽 위 정자, 동해 일몰 명장면",
+      "address": "강원도 양양군 현북면 하광정리 58-1",
+      "phone": null,
+      "coordinates": { "lat": 38.0223462, "lng": 128.7290946 },
+      "googlePlaceId": "ChIJVTGO-upV318R0JcDjRLLS64",
+      "hours": "상시 개방",
+      "schedule": { "arriveAt": "16:30", "durationMin": 60 },
+      "note": "계단 적고 완만해 임산부에게 부담 적음. 바람 셀 수 있으니 겉옷 챙기세요.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/하조대",
+        "kakao": "https://map.kakao.com/?q=하조대전망대",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJVTGO-upV318R0JcDjRLLS64"
+      }
+    },
+    {
+      "id": "gohyangjib-dinner",
+      "day": 2,
+      "order": 5,
+      "category": "food",
+      "name": "고향집",
+      "tagline": "노르웨이산 고등어구이 가성비 최강",
+      "address": "강원도 양양군 현남면 인구리 18-9",
+      "phone": null,
+      "coordinates": { "lat": 37.9687524, "lng": 128.7598114 },
+      "googlePlaceId": "ChIJuVh8o21X318Re12ZBADcdB4",
+      "hours": "매일 11:00 – 21:00",
+      "schedule": { "arriveAt": "18:30", "durationMin": 90 },
+      "note": "숙소 도보 3분. 고등어구이 1인분 14,000원. 푸짐한 반찬·손두부 평이 좋고, 별실 구조라 아이 동반에 편함. 주차는 우측 100m 이동 필요.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/고향집%20양양%20인구리",
+        "kakao": "https://map.kakao.com/?q=고향집%20양양%20인구리",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJuVh8o21X318Re12ZBADcdB4"
+      }
+    },
+    {
+      "id": "jukdo-morning",
+      "day": 3,
+      "order": 1,
+      "category": "walk",
+      "name": "죽도해변 아침 산책",
+      "tagline": "숙소 도보 2분, 마지막 인증샷",
+      "address": "강원도 양양군 현남면 인구리",
+      "phone": null,
+      "coordinates": { "lat": 37.975033, "lng": 128.7597284 },
+      "googlePlaceId": "ChIJm7KE44ZV318RZFdH_T5v4qc",
+      "hours": "상시 개방",
+      "schedule": { "arriveAt": "09:30", "durationMin": 60 },
+      "note": "아침 공기 마시며 가볍게 모래사장 산책. 서퍼들 구경하는 재미도 있고, 9개월 아기 발이 모래에 닿는 첫 경험.",
+      "image": null,
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/죽도해변",
+        "kakao": "https://map.kakao.com/?q=죽도해변",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJm7KE44ZV318RZFdH_T5v4qc"
+      }
+    }
+  ],
+
+  "recommendedCafes": [
+    {
+      "id": "cafe-log",
+      "rank": 1,
+      "name": "카페 로그",
+      "nameEn": "Cafe Log",
+      "tagline": "양양의 책카페 끝판왕",
+      "shortDescription": "130평 규모, 1만 3천 권의 책을 갖춘 강원 최대 북카페. 소나무숲 통창과 높은 층고로 도시 소음을 차단하는 압도적 공간감.",
+      "address": "강원도 양양군 현북면 송이로 86-32 (솔향기 언덕 1층)",
+      "region": "현북면",
+      "phone": "033-672-1092",
+      "website": "http://logcafe.co.kr/",
+      "hours": "매일 09:00 – 20:00 (라스트오더 19:30)",
+      "hoursDetail": {
+        "mon": "09:00 – 20:00",
+        "tue": "09:00 – 20:00",
+        "wed": "09:00 – 20:00",
+        "thu": "09:00 – 20:00",
+        "fri": "09:00 – 20:00",
+        "sat": "09:00 – 20:00",
+        "sun": "09:00 – 20:00"
+      },
+      "coordinates": { "lat": 38.0239501, "lng": 128.7120904 },
+      "googlePlaceId": "ChIJwyB-Wair2F8RhWK9gffOBOM",
+      "rating": 4.7,
+      "ratingCount": 302,
+      "tags": ["북카페", "숲뷰", "조용함", "베이커리"],
+      "pregnancyPoints": [
+        "눕는 라운지 체어와 안락한 소파석 다수",
+        "양양 카페 중 가장 한적한 편 (평일 추천)",
+        "통창 너머 소나무숲 풍경 — 시각적 안정감",
+        "케이크·빵 종류 다양해서 가벼운 식사 대체 가능"
+      ],
+      "signature": ["아메리카노", "크림치즈빵", "초코롤빵"],
+      "priceRange": "₩₩",
+      "image": null,
+      "imageSearchHint": "Cafe Log Yangyang book cafe interior pine forest",
+      "blogs": [
+        {
+          "title": "다이닝코드 — 솔직후기",
+          "url": "https://www.diningcode.com/profile.php?rid=52HVbNsuBPwh"
+        },
+        {
+          "title": "키자드 — 아이와 함께 북카페",
+          "url": "https://www.keyzard.cc/lswhh/nb/223952695449"
+        },
+        {
+          "title": "뽈레 (Polle) — 현북면 북카페",
+          "url": "https://polle.com/place/3iFFRW/%EC%B9%B4%ED%8E%98%20%EB%A1%9C%EA%B7%B8"
+        }
+      ],
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/카페로그%20양양",
+        "kakao": "https://map.kakao.com/?q=카페로그%20양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJwyB-Wair2F8RhWK9gffOBOM"
+      }
+    },
+    {
+      "id": "concentric-yangyang",
+      "rank": 2,
+      "name": "컨센트릭 양양점",
+      "nameEn": "Concentric Yangyang",
+      "tagline": "숲뷰 인더스트리얼 핸드드립 카페",
+      "shortDescription": "들판과 숲을 통창으로 마주하는 인더스트리얼 카페. 직접 로스팅한 원두로 핸드드립.",
+      "address": "강원도 양양군 강현면 뒷나루1길 4",
+      "region": "강현면",
+      "phone": "033-671-1311",
+      "website": null,
+      "hours": "평일 11:00 – 17:00 / 주말 10:00 – 18:00",
+      "hoursDetail": {
+        "mon": "11:00 – 17:00",
+        "tue": "11:00 – 17:00",
+        "wed": "11:00 – 17:00",
+        "thu": "11:00 – 17:00",
+        "fri": "11:00 – 17:00",
+        "sat": "10:00 – 18:00",
+        "sun": "10:00 – 18:00"
+      },
+      "coordinates": { "lat": 38.1275063, "lng": 128.622748 },
+      "googlePlaceId": "ChIJW3QsvCmv2F8Rk7OLWYtkrjY",
+      "rating": 4.4,
+      "ratingCount": 124,
+      "tags": ["숲뷰", "핸드드립", "인더스트리얼", "조용함"],
+      "pregnancyPoints": [
+        "좌석이 의외로 적어 평일은 거의 비어 있음",
+        "핸드드립이라 카페인 양 조절 요청 가능",
+        "우드 블라인드로 햇빛 조절, 깨끗한 화장실",
+        "낙산사 일정에서 차로 5분"
+      ],
+      "signature": ["핸드드립 커피", "블루스 시그니처", "애플 시나몬 티"],
+      "priceRange": "₩₩",
+      "image": null,
+      "imageSearchHint": "Concentric Yangyang cafe industrial forest view",
+      "blogs": [
+        {
+          "title": "트립닷컴 — 맛있는 커피 후기",
+          "url": "https://kr.trip.com/moments/detail/yangyang-14775-123519874/"
+        },
+        {
+          "title": "투어코리아 — 낙산사 근처 카페 추천",
+          "url": "https://www.tournews21.com/news/articleView.html?idxno=103823"
+        }
+      ],
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/컨센트릭%20양양",
+        "kakao": "https://map.kakao.com/?q=컨센트릭%20양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJW3QsvCmv2F8Rk7OLWYtkrjY"
+      }
+    },
+    {
+      "id": "sea-view-bakery",
+      "rank": 3,
+      "name": "바다뷰제빵소",
+      "nameEn": "Sea View Bakery",
+      "tagline": "5층 통창 오션뷰 베이커리 카페",
+      "shortDescription": "5층 건물 전체가 베이커리 카페. 빵은 직접 굽고, 케이크·페이스트리 종류 다양. 어디 앉아도 바다가 보임.",
+      "address": "강원도 양양군 강현면 동해대로 3296",
+      "region": "강현면",
+      "phone": "033-671-8899",
+      "website": null,
+      "hours": "매일 10:00 – 21:00",
+      "hoursDetail": {
+        "mon": "10:00 – 21:00",
+        "tue": "10:00 – 21:00",
+        "wed": "10:00 – 21:00",
+        "thu": "10:00 – 21:00",
+        "fri": "10:00 – 21:00",
+        "sat": "10:00 – 21:00",
+        "sun": "10:00 – 21:00"
+      },
+      "coordinates": { "lat": 38.1335735, "lng": 128.6209177 },
+      "googlePlaceId": "ChIJ98EM6nGv2F8RHvEbzX1RItA",
+      "rating": 4.0,
+      "ratingCount": 1404,
+      "tags": ["오션뷰", "베이커리", "통창", "5층"],
+      "pregnancyPoints": [
+        "좌석이 매우 많아 자리 다툼 없음",
+        "인공 산미 없는 부드러운 아인슈페너·라떼",
+        "토마토 바질 치아바타(7,500원) 등 가벼운 식사 대체",
+        "후진해변 바로 앞이라 식사 후 짧은 산책 가능"
+      ],
+      "signature": ["아인슈페너", "토마토 바질 치아바타", "다양한 케이크"],
+      "priceRange": "₩₩₩",
+      "image": null,
+      "imageSearchHint": "Sea View Bakery Yangyang 5 floor ocean view",
+      "blogs": [
+        {
+          "title": "studio24 — 양양 경치 좋은 카페 TOP 10",
+          "url": "https://studio24.kr/3195"
+        },
+        {
+          "title": "투어코리아 — 낙산사 근처 카페 추천",
+          "url": "https://www.tournews21.com/news/articleView.html?idxno=103823"
+        }
+      ],
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/바다뷰제빵소",
+        "kakao": "https://map.kakao.com/?q=바다뷰제빵소%20양양",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJ98EM6nGv2F8RHvEbzX1RItA"
+      }
+    },
+    {
+      "id": "hajodae-coffee",
+      "rank": 4,
+      "name": "하조대커피",
+      "nameEn": "Hajodae Coffee",
+      "tagline": "글램핑 무드 시그니처 카페",
+      "shortDescription": "넓은 마당 + 캠핑 스타일 평상 + 방갈로형 좌석. 자리마다 선풍기·그늘. 사진 한 장 한 장이 화보.",
+      "address": "강원도 양양군 현북면 하조대2길 48-55",
+      "region": "현북면",
+      "phone": "0507-1393-0931",
+      "website": null,
+      "hours": "금/토/일/월 10:30 – 18:00 (LO 17:30)",
+      "hoursDetail": {
+        "mon": "10:30 – 18:00",
+        "tue": "휴무",
+        "wed": "휴무",
+        "thu": "휴무",
+        "fri": "10:30 – 18:00",
+        "sat": "10:30 – 19:00",
+        "sun": "10:30 – 18:00"
+      },
+      "closedDays": ["tue", "wed", "thu"],
+      "warning": "화·수·목 휴무 — 방문 전 확인 필수",
+      "coordinates": { "lat": 38.023856, "lng": 128.721325 },
+      "googlePlaceId": "ChIJMQDttxpV318RBxl-wjiXB4w",
+      "rating": 4.7,
+      "ratingCount": 128,
+      "tags": ["글램핑", "마당", "사진명소", "감성카페"],
+      "pregnancyPoints": [
+        "각 자리가 분리된 텐트/평상 형태 — 남의 시선 신경 안 쓰고 누워 쉴 수 있음",
+        "야외 자리마다 선풍기·그늘 (6월 햇볕 강할 때 유용)",
+        "시그니처 메뉴 양이 적은 편이라 부담 없음",
+        "디카페인 요청 가능"
+      ],
+      "signature": ["하조대커피", "송이꿀크림라떼", "양양한입(빵)"],
+      "priceRange": "₩₩",
+      "image": null,
+      "imageSearchHint": "Hajodae Coffee Yangyang glamping tent cafe",
+      "blogs": [
+        {
+          "title": "다이닝코드 — 상세 후기",
+          "url": "https://www.diningcode.com/profile.php?rid=NBt3jtLwo7jg"
+        },
+        {
+          "title": "cafe5 — 양양 BEST 5 카페",
+          "url": "https://cafe5.co.kr/%EC%96%91%EC%96%91-%EC%B9%B4%ED%8E%98-%EB%B2%A0%EC%8A%A4%ED%8A%B8-5-%ED%9C%B4%EC%96%91%EC%A7%80-%EC%B9%B4%ED%8E%98/"
+        }
+      ],
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/하조대커피",
+        "kakao": "https://map.kakao.com/?q=하조대커피",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJMQDttxpV318RBxl-wjiXB4w"
+      }
+    },
+    {
+      "id": "yeppeuda-hajodae",
+      "rank": 5,
+      "name": "예쁘다 하조대",
+      "nameEn": "Yeppeuda Hajodae",
+      "tagline": "하조대 해변 옆 좌석 풍부 베이커리",
+      "shortDescription": "2019년 오픈한 큰 베이커리 카페. 실내·야외 좌석 모두 풍부. 티라미수가 시그니처.",
+      "address": "강원도 양양군 현북면 하조대2길 48-45",
+      "region": "현북면",
+      "phone": "033-673-0113",
+      "website": null,
+      "hours": "평일 10:00 – 18:00 / 주말 10:00 – 20:00",
+      "hoursDetail": {
+        "mon": "10:00 – 18:00",
+        "tue": "10:00 – 18:00",
+        "wed": "10:00 – 18:00",
+        "thu": "10:00 – 18:00",
+        "fri": "10:00 – 18:00",
+        "sat": "10:00 – 20:00",
+        "sun": "10:00 – 20:00"
+      },
+      "coordinates": { "lat": 38.0235273, "lng": 128.7220105 },
+      "googlePlaceId": "ChIJ7WkswNhV318RDpzN5yN6a6o",
+      "rating": 4.0,
+      "ratingCount": 297,
+      "tags": ["해변뷰", "베이커리", "티라미수", "좌석많음"],
+      "pregnancyPoints": [
+        "좌석이 많고 일부는 해변·공원 뷰 — 자리 잡기 쉬움",
+        "티라미수가 시그니처 (진하지만 부담스럽지 않은 단맛)",
+        "크루아상 다양 (단팥·치즈·플레인 등 입맛별 선택)",
+        "하조대 전망대 일정과 도보 1분 거리"
+      ],
+      "signature": ["티라미수", "다양한 크루아상", "아메리카노"],
+      "priceRange": "₩₩",
+      "image": null,
+      "imageSearchHint": "Yeppeuda Hajodae cafe Yangyang tiramisu beach",
+      "blogs": [
+        {
+          "title": "forourtour — 양양 카페 BEST 10",
+          "url": "https://forourtour.com/%EC%96%91%EC%96%91-%EC%B9%B4%ED%8E%98/"
+        },
+        {
+          "title": "studio24 — 경치 좋은 카페",
+          "url": "https://studio24.kr/3195"
+        }
+      ],
+      "mapLinks": {
+        "naver": "https://map.naver.com/p/search/예쁘다하조대",
+        "kakao": "https://map.kakao.com/?q=예쁘다하조대",
+        "google": "https://www.google.com/maps/place/?q=place_id:ChIJ7WkswNhV318RDpzN5yN6a6o"
+      }
+    }
+  ]
+}
