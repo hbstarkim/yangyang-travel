@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, MapPin, Waves, Users, Coffee, Map as MapIcon, Star } from "lucide-react";
 import { StickyNav } from "./components/StickyNav";
 import { PlaceCard } from "./components/PlaceCard";
@@ -120,8 +121,20 @@ export default function Home() {
             {tripData.cafes.map((cafe) => (
               <article
                 key={cafe.id}
-                className="bg-white rounded-2xl shadow-sm border border-mist/60 p-5"
+                className="bg-white rounded-2xl shadow-sm border border-mist/60 overflow-hidden"
               >
+                {cafe.image && (
+                  <div className="relative w-full aspect-[16/10] bg-mist/30">
+                    <Image
+                      src={cafe.image}
+                      alt={`${cafe.name} 카페 분위기`}
+                      fill
+                      sizes="(max-width: 480px) 100vw, 480px"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-5">
                 <div className="flex items-baseline justify-between mb-1.5 gap-2">
                   <div className="flex items-baseline gap-2 min-w-0">
                     <span className="text-xs font-bold text-[#A78BFA] shrink-0">
@@ -196,6 +209,7 @@ export default function Home() {
                       <Phone className="w-4 h-4" /> 전화
                     </a>
                   )}
+                </div>
                 </div>
               </article>
             ))}

@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yangyang-travel.vercel.app"),
   title: "양양 2박 3일 — 태교 힐링 여행",
   description: "2026년 6월 6일~8일, 가족 6명 양양 여행 일정 안내",
   openGraph: {

@@ -260,7 +260,7 @@
       ],
       "signature": ["아메리카노", "크림치즈빵", "초코롤빵"],
       "priceRange": "₩₩",
-      "image": null,
+      "image": "/cafes/cafe-log.webp",
       "imageSearchHint": "Cafe Log Yangyang book cafe interior pine forest",
       "blogs": [
         {
@@ -316,7 +316,7 @@
       ],
       "signature": ["핸드드립 커피", "블루스 시그니처", "애플 시나몬 티"],
       "priceRange": "₩₩",
-      "image": null,
+      "image": "/cafes/concentric-yangyang.jpg",
       "imageSearchHint": "Concentric Yangyang cafe industrial forest view",
       "blogs": [
         {
@@ -368,7 +368,7 @@
       ],
       "signature": ["아인슈페너", "토마토 바질 치아바타", "다양한 케이크"],
       "priceRange": "₩₩₩",
-      "image": null,
+      "image": "/cafes/sea-view-bakery.jpg",
       "imageSearchHint": "Sea View Bakery Yangyang 5 floor ocean view",
       "blogs": [
         {
@@ -422,7 +422,7 @@
       ],
       "signature": ["하조대커피", "송이꿀크림라떼", "양양한입(빵)"],
       "priceRange": "₩₩",
-      "image": null,
+      "image": "/cafes/hajodae-coffee.webp",
       "imageSearchHint": "Hajodae Coffee Yangyang glamping tent cafe",
       "blogs": [
         {
@@ -474,7 +474,7 @@
       ],
       "signature": ["티라미수", "다양한 크루아상", "아메리카노"],
       "priceRange": "₩₩",
-      "image": null,
+      "image": "/cafes/yeppeuda-hajodae.jpg",
       "imageSearchHint": "Yeppeuda Hajodae cafe Yangyang tiramisu beach",
       "blogs": [
         {
