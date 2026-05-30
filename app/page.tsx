@@ -22,20 +22,22 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-sand">
       {/* 1. Hero 헤더 (양양 죽도해변 서핑 배경) */}
-      <header className="relative text-white pt-12 pb-10 px-5 overflow-hidden">
-        {/* 배경 사진 */}
+      <header
+        className="relative isolate text-white pt-12 pb-10 px-5 overflow-hidden bg-gradient-to-b from-ocean via-ocean to-sage"
+      >
+        {/* 배경 사진 (로드 실패 시 위 그라데이션이 보임) */}
         <Image
           src="/hero/yangyang-surf.jpg"
           alt="양양 죽도해변에서 서핑을 즐기는 사람들"
           fill
           priority
           sizes="100vw"
-          className="object-cover -z-10"
+          className="object-cover object-center z-0"
         />
         {/* 가독성을 위한 어두운 그라데이션 오버레이 */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ocean/85 via-ocean/70 to-sage/80" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-ocean/75 via-ocean/55 to-sage/70" />
 
-        <div className="max-w-[480px] mx-auto relative">
+        <div className="relative z-10 max-w-[480px] mx-auto">
           <div className="flex items-center gap-1.5 text-xs opacity-90 mb-3 drop-shadow">
             <Waves className="w-3.5 h-3.5" />
             <span>YANGYANG · GANGWON</span>
@@ -77,6 +79,29 @@ export default function Home() {
         {/* 3. 출발 전 체크 */}
         <section id="before" className="pt-6 scroll-mt-16">
           <h2 className="text-xl font-bold text-ocean mb-3 px-1">출발 전 체크</h2>
+
+          {/* 부담 없이 강조 박스 */}
+          <div className="bg-warm/15 border border-warm/40 rounded-2xl p-4 mb-3">
+            <div className="text-sm font-semibold text-ocean mb-2 flex items-center gap-1.5">
+              💛 이 일정은 어디까지나 ‘초안’입니다
+            </div>
+            <p className="text-sm text-ink/85 leading-relaxed mb-2">
+              가장 중요한 건 <span className="font-semibold">제수씨 컨디션</span>이에요.
+              가고 싶은 곳, 하고 싶은 것 위주로 그때그때 바꿔도 전혀 문제 없습니다.
+            </p>
+            <p className="text-sm text-ink/85 leading-relaxed mb-2">
+              <span className="font-semibold text-ocean">
+                숙소에만 있고 싶으면 숙소에만 있어도 충분해요.
+              </span>{" "}
+              낙산사 안 가도, 하조대 안 올라가도, 식당 한 끼 건너뛰어도 OK.
+              여기 적힌 시간·장소는 ‘이렇게도 가능하다’는 선택지일 뿐입니다.
+            </p>
+            <p className="text-xs text-ink/60 leading-relaxed">
+              💡 아침에 그날 컨디션 보고 “오늘은 산책만 / 오늘은 숙소+카페만”
+              자유롭게 결정해 주세요. 우리는 다 따라갑니다.
+            </p>
+          </div>
+
           <WarningBox title={warning.title}>
             <p>{warning.body}</p>
             <p className="font-medium">{warning.recommendation}</p>
