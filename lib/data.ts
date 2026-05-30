@@ -1,5 +1,17 @@
 export type PlaceCategory = "food" | "place" | "lodging" | "walk";
 
+export interface RestaurantOption {
+  name: string;
+  address?: string;
+  description: string;
+  phone?: string;
+  mapQuery: string;
+  url?: string;
+  bookingUrl?: string;
+  openHours?: string;
+  tag?: string;
+}
+
 export interface Place {
   time: string;
   duration: string;
@@ -12,6 +24,7 @@ export interface Place {
   url?: string;
   bookingUrl?: string;
   openHours?: string;
+  alternatives?: RestaurantOption[];
 }
 
 export interface DaySection {
@@ -62,6 +75,24 @@ export const days: DaySection[] = [
         mapQuery: "다락막국수 양양 현남면",
         category: "food",
         openHours: "11:00 - 21:00",
+        alternatives: [
+          {
+            name: "양양막국수 (인구점)",
+            address: "강원도 양양군 현남면 인구리 일대",
+            description:
+              "동해바다가 보이는 깔끔한 막국수집. 메밀 본연의 맛에 충실해 임산부에게 부담 없음. 실내가 넓어 6명 동시 입장도 비교적 수월합니다. 가벼운 점심으로 추천.",
+            mapQuery: "양양막국수 인구",
+            tag: "넓은 좌석",
+          },
+          {
+            name: "버거스테이지",
+            address: "강원도 양양군 현남면 인구중앙길 103-2",
+            description:
+              "죽도해변 앞 수제버거집. 바다 뷰가 있어 3세 조카가 좋아하고, 사이드 메뉴 다양해 아이들도 잘 먹어요. 막국수 대신 가볍게 양식이 당길 때 대안. 6월 초 점심엔 비교적 한산.",
+            mapQuery: "버거스테이지 양양 죽도",
+            tag: "아이 친화 양식",
+          },
+        ],
       },
       {
         time: "3:00 PM",
@@ -97,6 +128,24 @@ export const days: DaySection[] = [
         mapQuery: "Poipu 양양 인구",
         category: "food",
         openHours: "11:00 - 21:00",
+        alternatives: [
+          {
+            name: "네거티브바이브 (Negative Vibe)",
+            address: "강원도 양양군 현남면 인구항길 4-8 2층",
+            description:
+              "인구해변 앞 2층 양식당. 피자·폭립이 시그니처. 통창 바다 뷰가 좋아 사진 맛집으로도 통하고, 음악이 Poipu보다 덜 시끄러워 임산부에게 편합니다. 6명 좌석 미리 문의 권장.",
+            mapQuery: "네거티브바이브 양양 인구",
+            tag: "조용한 양식",
+          },
+          {
+            name: "거북이 서프바",
+            address: "강원도 양양군 현남면 인구해변 일대",
+            description:
+              "바다 바로 앞 캐주얼 퓨전 펍. 해풍 맞으며 가벼운 안주류·파스타·라이스 메뉴 가능. 야외 좌석이 있어 아이들이 답답해하지 않아요. 술 안 드시는 임산부 위주면 분위기 미리 체크.",
+            mapQuery: "거북이 서프바 양양 인구해변",
+            tag: "오션뷰 캐주얼",
+          },
+        ],
       },
     ],
   },
@@ -130,6 +179,24 @@ export const days: DaySection[] = [
           "강원도 향토음식 한정식. 낙산사에서 차 5분. 자극 적은 푸짐한 메뉴 위주라 임산부에게 좋아요. 6명 룸 미리 예약 강력 추천. 21:00까지 운영.",
         mapQuery: "정안식당 양양",
         category: "food",
+        alternatives: [
+          {
+            name: "흥부네 밥상",
+            address: "강원도 양양군 강현면 낙산사 근처",
+            description:
+              "필례 약수로 지은 돌솥밥에 반찬 10가지·생선구이·돼지불고기까지 1인 12,000원. 정안식당보다 캐주얼하면서 가성비 좋고, 곤드레 돌솥밥은 임산부 입맛에도 잘 맞아요.",
+            mapQuery: "흥부네 밥상 양양 낙산",
+            tag: "가성비 돌솥밥",
+          },
+          {
+            name: "송이골",
+            address: "강원도 양양군 양양읍 남대천 근처",
+            description:
+              "양양 송이버섯 돌솥밥 원조 식당. 송이 돌솥정식 1인 20,000원. 정갈한 한정식 코스로 부모님 모시기 좋고, 송이 향이 깊어 특별한 점심으로 강추. 룸 좌석 미리 문의.",
+            mapQuery: "송이골 양양",
+            tag: "프리미엄 한정식",
+          },
+        ],
       },
       {
         time: "2:45 PM",
@@ -160,6 +227,24 @@ export const days: DaySection[] = [
           "숙소 도보 3분. 노르웨이산 고등어구이 1인분 14,000원으로 가성비 최강. 푸짐한 반찬과 손두부도 평이 좋고, 자녀 동반에 적합한 별실 구조. 명인들도 자주 가는 집. 주차는 우측 100m 이동 필요.",
         mapQuery: "고향집 양양 인구리",
         category: "food",
+        alternatives: [
+          {
+            name: "선혜식당",
+            address: "강원도 양양군 현남면 인구리 19-1",
+            description:
+              "인구리 골목 한식·한정식집. 자극 적고 따뜻한 가정식 위주라 임산부·아이 모두 안전합니다. 고향집 자리가 안 될 때 도보 3분 거리의 가장 안전한 대안.",
+            mapQuery: "선혜식당 양양 인구리",
+            tag: "한정식 가정식",
+          },
+          {
+            name: "인구수산포차",
+            address: "강원도 양양군 현남면 인구해변",
+            description:
+              "대왕해물철판이 시그니처. 가리비·새우·조개 한 상 푸짐하게. 6명 모임용으로 임팩트 있고, 아이들도 해산물 굽는 광경 좋아해요. 임산부는 해산물 익힘 정도 확인 필수.",
+            mapQuery: "인구수산포차 양양",
+            tag: "해산물 한상",
+          },
+        ],
       },
     ],
   },

@@ -9,6 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import type { Place, PlaceCategory } from "@/lib/data";
+import { FoodSwipePicker } from "./FoodSwipePicker";
 
 const categoryStyles: Record<
   PlaceCategory,
@@ -21,6 +22,14 @@ const categoryStyles: Record<
 };
 
 export function PlaceCard({ place }: { place: Place }) {
+  if (
+    place.category === "food" &&
+    place.alternatives &&
+    place.alternatives.length > 0
+  ) {
+    return <FoodSwipePicker place={place} />;
+  }
+
   const style = categoryStyles[place.category];
   const Icon = style.icon;
   const mapHref = `https://map.naver.com/p/search/${encodeURIComponent(
