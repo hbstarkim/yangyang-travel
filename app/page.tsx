@@ -86,7 +86,7 @@ export default function Home() {
               💛 이 일정은 어디까지나 ‘초안’입니다
             </div>
             <p className="text-sm text-ink/85 leading-relaxed mb-2">
-              가장 중요한 건 <span className="font-semibold">제수씨 컨디션</span>이에요.
+              가장 중요한 건 <span className="font-semibold">처남댁의 컨디션</span>이에요.
               가고 싶은 곳, 하고 싶은 것 위주로 그때그때 바꿔도 전혀 문제 없습니다.
             </p>
             <p className="text-sm text-ink/85 leading-relaxed mb-2">
