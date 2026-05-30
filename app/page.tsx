@@ -6,13 +6,13 @@ import { DayHeader } from "./components/DayHeader";
 import { WarningBox } from "./components/WarningBox";
 import { TipList } from "./components/TipList";
 import { TripMap } from "./components/TripMap";
+import { MeetupGuide } from "./components/MeetupGuide";
 import {
   trip,
   days,
   reservations,
   rainyAlternatives,
   babyTips,
-  meetupTips,
   markets,
   warning,
 } from "@/lib/data";
@@ -21,32 +21,48 @@ import { tripData } from "@/lib/trip-data";
 export default function Home() {
   return (
     <div className="min-h-screen bg-sand">
-      {/* 1. Hero 헤더 */}
-      <header className="bg-gradient-to-b from-ocean via-ocean to-sage text-white pt-12 pb-10 px-5">
-        <div className="max-w-[480px] mx-auto">
-          <div className="flex items-center gap-1.5 text-xs opacity-80 mb-3">
+      {/* 1. Hero 헤더 (양양 죽도해변 서핑 배경) */}
+      <header className="relative text-white pt-12 pb-10 px-5 overflow-hidden">
+        {/* 배경 사진 */}
+        <Image
+          src="/hero/yangyang-surf.jpg"
+          alt="양양 죽도해변에서 서핑을 즐기는 사람들"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover -z-10"
+        />
+        {/* 가독성을 위한 어두운 그라데이션 오버레이 */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ocean/85 via-ocean/70 to-sage/80" />
+
+        <div className="max-w-[480px] mx-auto relative">
+          <div className="flex items-center gap-1.5 text-xs opacity-90 mb-3 drop-shadow">
             <Waves className="w-3.5 h-3.5" />
             <span>YANGYANG · GANGWON</span>
           </div>
-          <h1 className="text-2xl font-bold leading-snug mb-2">
+          <h1 className="text-2xl font-bold leading-snug mb-2 drop-shadow-md">
             {trip.title}
           </h1>
-          <p className="text-sm opacity-90 mb-6">{trip.subtitle}</p>
+          <p className="text-sm opacity-95 mb-6 drop-shadow">
+            {trip.subtitle}
+          </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/15">
-            <div className="text-xs opacity-80 mb-1 flex items-center gap-1">
+          <div className="bg-white/15 backdrop-blur-md rounded-2xl p-4 border border-white/20 shadow-lg">
+            <div className="text-xs opacity-90 mb-1 flex items-center gap-1">
               <MapPin className="w-3.5 h-3.5" /> 숙소
             </div>
             <div className="text-sm font-medium mb-4">{trip.lodging}</div>
 
-            <div className="text-xs opacity-80 mb-2 flex items-center gap-1">
+            <div className="text-xs opacity-90 mb-2 flex items-center gap-1">
               <Users className="w-3.5 h-3.5" /> 인원 6명
             </div>
             <div className="space-y-1.5">
               {trip.members.map((m, i) => (
                 <div key={i} className="text-sm">
                   <span className="font-semibold">{m.group}</span>
-                  <span className="opacity-80 text-xs ml-1.5">— {m.detail}</span>
+                  <span className="opacity-90 text-xs ml-1.5">
+                    — {m.detail}
+                  </span>
                 </div>
               ))}
             </div>
@@ -353,12 +369,14 @@ export default function Home() {
 
           {/* 합류 & 출발 가이드 */}
           <section className="pt-10">
-            <h2 className="text-xl font-bold text-ocean mb-3 px-1">
+            <h2 className="text-xl font-bold text-ocean mb-1 px-1">
               합류 & 출발 가이드
             </h2>
-            <div className="bg-white rounded-2xl shadow-sm border border-mist/60 p-5">
-              <TipList items={meetupTips} />
-            </div>
+            <p className="text-xs text-ink/55 mb-3 px-1 leading-relaxed">
+              1일차 12:30 점심을 swipe로 결정하면 합류 지점·내비·주차 안내가
+              자동으로 바뀝니다.
+            </p>
+            <MeetupGuide />
           </section>
         </div>
       </main>
