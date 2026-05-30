@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, MapPin, Waves, Users, Coffee, Map as MapIcon, Star } from "lucide-react";
+import { Phone, MapPin, Waves, Users, Coffee, Map as MapIcon, Star, Store } from "lucide-react";
 import { StickyNav } from "./components/StickyNav";
 import { PlaceCard } from "./components/PlaceCard";
 import { DayHeader } from "./components/DayHeader";
@@ -13,6 +13,7 @@ import {
   rainyAlternatives,
   babyTips,
   meetupTips,
+  markets,
   warning,
 } from "@/lib/data";
 import { tripData } from "@/lib/trip-data";
@@ -262,6 +263,92 @@ export default function Home() {
             <div className="bg-white rounded-2xl shadow-sm border border-mist/60 p-5">
               <TipList items={babyTips} />
             </div>
+          </section>
+
+          {/* 양양 시장 & 회 포장 */}
+          <section className="pt-10">
+            <h2 className="text-xl font-bold text-ocean mb-1 px-1 flex items-center gap-1.5">
+              <Store className="w-5 h-5" /> 양양 시장 & 회 포장
+            </h2>
+            <p className="text-xs text-ink/55 mb-3 px-1 leading-relaxed">
+              들르기 좋은 시장 3곳. 회·해산물·산나물 포장해 숙소에서 편하게
+              드시기 좋아요.
+            </p>
+            <div className="space-y-4">
+              {markets.map((m) => {
+                const mapHref = `https://map.naver.com/p/search/${encodeURIComponent(
+                  m.mapQuery
+                )}`;
+                return (
+                  <article
+                    key={m.name}
+                    className="bg-white rounded-2xl shadow-sm border border-mist/60 p-5"
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-1">
+                      <h3 className="text-lg font-semibold text-ink leading-snug">
+                        {m.name}
+                      </h3>
+                      <span className="text-[10px] font-medium text-ocean bg-sage/20 px-2 py-1 rounded-full shrink-0">
+                        {m.distanceFromLodging}
+                      </span>
+                    </div>
+                    <p className="text-xs text-ink/55 mb-1 flex items-start gap-1">
+                      <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                      <span>{m.area}</span>
+                    </p>
+                    {m.schedule && (
+                      <p className="text-xs text-ink/55 mb-3">
+                        🗓 {m.schedule}
+                      </p>
+                    )}
+                    <p className="text-sm text-ink/80 leading-relaxed mb-4">
+                      {m.description}
+                    </p>
+
+                    <div className="border-t border-mist/40 pt-3 mb-3">
+                      <div className="text-xs font-semibold text-ocean mb-2">
+                        들러볼 가게 3곳
+                      </div>
+                      <ul className="space-y-2.5">
+                        {m.stalls.map((s) => (
+                          <li
+                            key={s.name}
+                            className="bg-sand/50 rounded-lg px-3 py-2.5"
+                          >
+                            <div className="flex items-baseline justify-between gap-2 mb-1">
+                              <span className="text-sm font-semibold text-ink">
+                                {s.name}
+                              </span>
+                              {s.tag && (
+                                <span className="text-[10px] text-ocean/80 shrink-0">
+                                  {s.tag}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-ink/70 leading-relaxed">
+                              {s.description}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <a
+                      href={mapHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-1.5 min-h-11 px-4 rounded-xl bg-ocean text-white text-sm font-medium hover:bg-ocean/90 transition-colors"
+                    >
+                      <MapPin className="w-4 h-4" /> 시장 위치 보기
+                    </a>
+                  </article>
+                );
+              })}
+            </div>
+            <p className="text-xs text-ink/50 mt-3 px-1 leading-relaxed">
+              💡 회 포장 팁: 보냉가방·아이스팩 챙기기, 주말 14~18시는 줄 길어요,
+              임산부는 활어 신선도 직접 확인 후 적당량만 드세요.
+            </p>
           </section>
 
           {/* 합류 & 출발 가이드 */}

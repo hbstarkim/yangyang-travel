@@ -66,7 +66,7 @@ export function PlaceCard({ place }: { place: Place }) {
           <Clock className="w-3.5 h-3.5" /> 운영 {place.openHours}
         </p>
       )}
-      <p className="text-sm text-ink/80 leading-relaxed mb-4">
+      <p className="text-sm text-ink/80 leading-relaxed mb-4 whitespace-pre-line">
         {place.description}
       </p>
 
